@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/meli/(.*)",
+      "destination": "https://api.mercadolibre.com/$1"
+    }
+  ]
+}
