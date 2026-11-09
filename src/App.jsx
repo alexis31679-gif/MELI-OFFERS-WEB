@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import { Zap } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 
 import Home from './pages/home';
 import CategoryPage from './pages/CategoryPage';
@@ -45,6 +46,9 @@ function App() {
 
   return (
     <BrowserRouter>
+      {/* Componente de Analíticas de Vercel en tiempo real */}
+      <Analytics />
+
       <style>
         {`
           @keyframes fadeDown { from { opacity: 0; transform: translateY(-30px); } to { opacity: 1; transform: translateY(0); } }
